@@ -1,0 +1,9 @@
+{
+"id":1,
+"name":"house1",
+"link":"C:\models\house.obj",
+"matrix":[0, 0, 0
+		0, 0, 0,
+		0.5, 0.5, 0.5
+]
+}
