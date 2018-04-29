@@ -7,17 +7,16 @@ public class Generator : MonoBehaviour {
     public Transform example;
     Transform buildings;
 
-    DataReader sqlc = new DataReader();
+    DataReader data = new DataReader();
     //vykreslení scény
     void Start () {
-        sqlc.LoadGameData();
+        data.LoadGameData();
 
         buildings = new GameObject("Buildings").transform;
 
-        for (int i = 0; i < sqlc.GetSize(); i++)
-        {
+        for (int i = 0; i < data.GetSize(); i++) {
             Transform newObject = Instantiate(example, example.position, example.rotation);
-            newObject.GetComponent<Building>().Set(sqlc.GetModel(i));
+            newObject.GetComponent<Building>().Set(data.GetModel(i));
             newObject.SetParent(buildings);
         }
 	}

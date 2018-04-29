@@ -21,21 +21,21 @@ public class DataReader {
 
 
 
-    public void LoadGameData()
-    {
+    public void LoadGameData() {
         filePath = Path.Combine(Application.streamingAssetsPath, gameDataFileName);
         Debug.Log("filepath = " + filePath);
 
-        if (File.Exists(filePath))
-        {
+        if (File.Exists(filePath)) {
             // Read the json from the file into a string
+
             string dataAsJson = File.ReadAllText(filePath);
             Model tmpModel = new Model();
+
+            //mapping the json file onto the Model object
             tmpModel = JsonUtility.FromJson<Model>(dataAsJson);
             dataItems.Add(tmpModel);
         }
-        else
-        {
+        else {
             Debug.LogError("Cannot load game data!");
         }
 
