@@ -11,6 +11,7 @@ public class Generator : MonoBehaviour {
     //vykreslení scény
     void Start () {
         data.LoadGameData();
+        data.LoadMultipleGameData();
 
         buildings = new GameObject("Buildings").transform;
 

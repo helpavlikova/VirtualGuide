@@ -13,7 +13,7 @@
 	"id":2,
 	"name":"house2",
 	"link":".\\house.obj",
-	"matrix":[1, 0, 0,
+	"matrix":[3, 0, 0,
 			0, 0, 0,
 			0.5, 0.5, 0.5
 			]
