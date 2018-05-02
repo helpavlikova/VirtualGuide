@@ -6,13 +6,14 @@ public class Generator : MonoBehaviour {
 
     public Transform example;
     Transform buildings;
-
     DataReader data = new DataReader();
-    //vykreslení scény
+
+
+    //draws the scene
     void Start () {
-        data.LoadGameData();
         data.LoadMultipleGameData();
 
+        //a parent object for all of the buildings
         buildings = new GameObject("Buildings").transform;
 
         for (int i = 0; i < data.GetSize(); i++) {

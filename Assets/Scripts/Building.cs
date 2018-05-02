@@ -24,6 +24,6 @@ public class Building : MonoBehaviour
         GetComponent<Transform>().eulerAngles = new Vector3(model.matrix[3], model.matrix[4], model.matrix[5]);
         GetComponent<Transform>().localScale = new Vector3(model.matrix[6], model.matrix[7], model.matrix[8]);
 
-        GetComponent<Renderer>().material = Resources.Load("red", typeof(Material)) as Material;
+       // GetComponent<Renderer>().material = Resources.Load("red", typeof(Material)) as Material;
     }
 }
