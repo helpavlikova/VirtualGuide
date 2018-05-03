@@ -6,6 +6,20 @@ using System.Net;
 using System;
 using System.Security.Cryptography.X509Certificates;
 using System.Net.Security;
+using Newtonsoft.Json;
+
+//a root clas encompassing the array of all models
+public class Root
+{
+    public Model[] models;
+}
+
+
+public class Coords {
+    public float x;
+    public float y;
+    public float z;
+}
 
 //informace o modelu
 [System.Serializable]
@@ -13,48 +27,19 @@ public class Model {
     public int id;
     public string name;
     public string link;
-    public float[] matrix;
-}
-
-
-
-public static class JsonHelper
-{
-    public static T[] FromJson<T>(string json)
-    {
-        Wrapper<T> wrapper = JsonUtility.FromJson<Wrapper<T>>(json);
-        Debug.Log("wrapper.Items = " + wrapper.Items.Length);
-        return wrapper.Items;
-    }
-
-    public static string ToJson<T>(T[] array)
-    {
-        Wrapper<T> wrapper = new Wrapper<T>();
-        wrapper.Items = array;
-        return JsonUtility.ToJson(wrapper);
-    }
-
-    public static string ToJson<T>(T[] array, bool prettyPrint)
-    {
-        Wrapper<T> wrapper = new Wrapper<T>();
-        wrapper.Items = array;
-        return JsonUtility.ToJson(wrapper, prettyPrint);
-    }
-
-    [System.Serializable]
-    private class Wrapper<T>
-    {
-        public T[] Items;
-    }
+    public Coords position_coords;
+    public Coords rotation_coords;
+    public Coords scale_coords;
 }
 
 public class DataReader { 
    
-    List<Model> dataItems = new List<Model>();
-    Model[] models;
+    Root root;
     string filePath;
     string uri = "https://virtserver.swaggerhub.com/pavlihel9/VirtualGuide/1.0.4/models/42";
+    string gameDataFileName = "data3.json";
 
+    //via https://answers.unity.com/questions/792342/how-to-validate-ssl-certificates-when-using-httpwe.html
     public bool MyRemoteCertificateValidationCallback(System.Object sender,
    X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
     {
@@ -83,10 +68,8 @@ public class DataReader {
         }
         return isOk;
     }
-
-
+    
     public void LoadMultipleGameData() {
-        string gameDataFileName = "data2.json";
         filePath = Path.Combine(Application.streamingAssetsPath, gameDataFileName);
         Debug.Log("filepath = " + filePath);
 
@@ -94,8 +77,10 @@ public class DataReader {
             // Read the json from the file into a string
 
             string dataAsJson = File.ReadAllText(filePath);
-            models = JsonHelper.FromJson<Model>(dataAsJson);
-            Debug.Log("models [0] name = " + models[0].name);
+            
+            root = JsonConvert.DeserializeObject<Root>(dataAsJson);
+
+            Debug.Log("models [0] name = " + root.models[0].name);
         }
         else {
             Debug.LogError("Cannot load game data!");
@@ -106,16 +91,19 @@ public class DataReader {
     }
 
     public Model GetModel(int i) {
-        return models[i];
+        return root.models[i];
     }
 
     public int GetSize() {
-        return models.Length;
+        return root.models.Length;
     }
 
     private void GetJSONfromAPI() {
         HttpWebRequest request = (HttpWebRequest)WebRequest.Create(String.Format(uri));
+
+        //a special function to add a certificate (otherwise Mono won't allow any connections]
         ServicePointManager.ServerCertificateValidationCallback = MyRemoteCertificateValidationCallback;
+
         HttpWebResponse response = (HttpWebResponse)request.GetResponse();
         StreamReader reader = new StreamReader(response.GetResponseStream());
         string jsonResponse = reader.ReadToEnd();

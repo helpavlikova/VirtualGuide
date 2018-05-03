@@ -74,3 +74,5 @@ C:\FIT\Bakalarka\VirtualniPruvodce\Temp\bin\Debug\UnityEditor.VR.xml
 C:\FIT\Bakalarka\VirtualniPruvodce\obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
 C:\FIT\Bakalarka\VirtualniPruvodce\obj\Debug\Assembly-CSharp-Editor.dll
 C:\FIT\Bakalarka\VirtualniPruvodce\obj\Debug\Assembly-CSharp-Editor.pdb
+C:\FIT\Bakalarka\VirtualniPruvodce\Temp\bin\Debug\Newtonsoft.Json.dll
+C:\FIT\Bakalarka\VirtualniPruvodce\Temp\bin\Debug\Newtonsoft.Json.xml

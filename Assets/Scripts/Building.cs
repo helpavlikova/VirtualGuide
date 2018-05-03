@@ -20,9 +20,9 @@ public class Building : MonoBehaviour
     {
         GetComponent<MeshFilter>().mesh = FastObjImporter.Instance.ImportFile(model.link);
         
-        GetComponent<Transform>().position = new Vector3(model.matrix[0], model.matrix[1], model.matrix[2]);
-        GetComponent<Transform>().eulerAngles = new Vector3(model.matrix[3], model.matrix[4], model.matrix[5]);
-        GetComponent<Transform>().localScale = new Vector3(model.matrix[6], model.matrix[7], model.matrix[8]);
+        GetComponent<Transform>().position = new Vector3(model.position_coords.x, model.position_coords.y, model.position_coords.z);
+        GetComponent<Transform>().eulerAngles = new Vector3(model.rotation_coords.x, model.rotation_coords.y, model.rotation_coords.z);
+        GetComponent<Transform>().localScale = new Vector3(model.scale_coords.x, model.scale_coords.y, model.scale_coords.z);
 
        // GetComponent<Renderer>().material = Resources.Load("red", typeof(Material)) as Material;
     }
