@@ -84,7 +84,11 @@ public class DataReader {
         return value;
     }
 
-    public string GetJSONfromFS() {
+    public string GetJSONfromFS()
+    {
+        filePath = Path.Combine(Application.streamingAssetsPath, gameDataFileName);
+        Debug.Log("filepath = " + filePath);
+
         if (File.Exists(filePath))
         {
             // Read the json from the file into a string
@@ -118,9 +122,7 @@ public class DataReader {
 
     public void LoadMultipleGameData() {
         string jsonresponse;
-        filePath = Path.Combine(Application.streamingAssetsPath, gameDataFileName);
-        Debug.Log("filepath = " + filePath);
-        jsonresponse = GetJSONfromAPI();
+        jsonresponse = GetJSONfromFS();
 
         root = JsonConvert.DeserializeObject<Root>(jsonresponse);       
 

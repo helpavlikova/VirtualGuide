@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/FIT/Bakalarka/VirtualniPruvodce/Deploy/pruvodce.exe
+C:/FIT/Bakalarka/VirtualniPruvodce/Deploy/pruvodce_1_0.exe
 SceneListBegin?
 Assets/Scenes/scene.unity
 SceneListEnd?
