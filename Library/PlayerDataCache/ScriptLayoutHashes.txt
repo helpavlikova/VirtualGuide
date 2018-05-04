@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/FIT/Bakalarka/VirtualniPruvodce/Deploy/pruvodce_1_0.exe
+C:/FIT/Bakalarka/VirtualniPruvodce/Deploy/pruvodce_1_0_1/pruvodce.exe
 SceneListBegin?
 Assets/Scenes/scene.unity
 SceneListEnd?
@@ -244,7 +244,7 @@ d4a69d91b01f3eb7db006f01a9a7be69 Assembly-CSharp.dll:VRTK.UnityEventHelper.VRTK_
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:VRTK.SDK_FallbackController
 f0294507edfdd50fc0a4c15f641dad47 Assembly-CSharp.dll:VRTK.VRTK_StraightPointerRenderer
 b8c781e4627e9e25ef9771aa7eea4122 Assembly-CSharp.dll:VRTK.Examples.FireExtinguisher_Base
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Building
+beae3bf741d85a076330c5e1a8074a67 Assembly-CSharp.dll:.Building
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:VRTK.SDK_ControllerSim
 dbcf0747c0ba7d53ad280f253bc91e5d Assembly-CSharp.dll:VRTK.Examples.Archery.ArrowSpawner
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:VRTK.SDK_DaydreamSystem
