@@ -1,0 +1,30 @@
+{
+"models": [
+	{
+    "model_name": "house42",
+    "model_ID": 42,
+    "info": "some random info",
+    "file_link": ".\\house.obj",
+    "file": "string",
+    "weather": "sunny",
+    "time": "afternoon",
+    "season": "spring",
+    "texture_link": ".\\house.mtl",
+    "position_coords": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "rotation_coords": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "scale_coords": {
+      "x": 0.5,
+      "y": 0.5,
+      "z": 0.5
+    }
+  }
+	]
+}

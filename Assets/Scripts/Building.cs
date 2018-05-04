@@ -18,7 +18,7 @@ public class Building : MonoBehaviour
     //nastavení budovy
     public void Set( Model model )
     {
-        GetComponent<MeshFilter>().mesh = FastObjImporter.Instance.ImportFile(model.link);
+        GetComponent<MeshFilter>().mesh = FastObjImporter.Instance.ImportFile(model.file_link);
         
         GetComponent<Transform>().position = new Vector3(model.position_coords.x, model.position_coords.y, model.position_coords.z);
         GetComponent<Transform>().eulerAngles = new Vector3(model.rotation_coords.x, model.rotation_coords.y, model.rotation_coords.z);
