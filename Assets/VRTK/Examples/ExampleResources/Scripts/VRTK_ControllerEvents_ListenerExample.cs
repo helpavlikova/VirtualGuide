@@ -75,7 +75,7 @@
             VRTK_Logger.Info("Controller on index '" + index + "' " + button + " has been " + action
                     + " with a pressure of " + e.buttonPressure + " / trackpad axis at: " + e.touchpadAxis + " (" + e.touchpadAngle + " degrees)");
         }
-
+        
         private void DoTriggerPressed(object sender, ControllerInteractionEventArgs e)
         {
             DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "TRIGGER", "pressed", e);

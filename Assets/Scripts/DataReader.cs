@@ -87,7 +87,7 @@ public class DataReader {
     public string GetJSONfromFS()
     {
         filePath = Path.Combine(Application.streamingAssetsPath, gameDataFileName);
-        Debug.Log("filepath = " + filePath);
+        //Debug.Log("filepath = " + filePath);
 
         if (File.Exists(filePath))
         {
@@ -120,7 +120,7 @@ public class DataReader {
         return jsonResponse;
     }
 
-    public void LoadMultipleGameData() {
+    public void LoadGameData() {
         string jsonresponse;
         jsonresponse = GetJSONfromFS();
 

@@ -22,7 +22,7 @@ public class Building : MonoBehaviour
 
         Texture2D tex = null;
         byte[] fileData;
-        Debug.Log("filepath = " + filePath);
+       // Debug.Log("filepath = " + filePath);
 
         if (File.Exists(filePath))
         {

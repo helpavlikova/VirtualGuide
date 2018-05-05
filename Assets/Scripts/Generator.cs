@@ -11,7 +11,7 @@ public class Generator : MonoBehaviour {
 
     //draws the scene
     void Start () {
-        data.LoadMultipleGameData();
+        data.LoadGameData();
 
         //a parent object for all of the buildings
         buildings = new GameObject("Buildings").transform;
