@@ -2,11 +2,11 @@
 
 BASE_URL=https://netstorage.unity3d.com/unity
 HASH=88d00a7498cd
-VERSION=5.5.1f1
+VERSION=2017.4.0f1
 
 download() {
   file=$1
-  url="$BASE_URL/$HASH/$package"
+  url="https://download.unity3d.com/download_unity/52d9cb89b362/MacEditorInstaller/Unity-2017.4.2f2.pkg"
 
   echo "Downloading from $url: "
   curl -o `basename "$package"` "$url"
