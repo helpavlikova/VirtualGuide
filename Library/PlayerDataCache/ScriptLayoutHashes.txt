@@ -1,8 +1,8 @@
 WindowsStandalone
 PlayerPath?
-C:/FIT/Bakalarka/VirtualniPruvodce/Deploy/pruvodce_1_0_1/pruvodce.exe
+C:/FIT/Bakalarka/VirtualniPruvodce/Deploy/pruvodce_1_0_2/pruvodce.exe
 SceneListBegin?
-Assets/Scenes/scene.unity
+Assets/Scenes/mainScene.unity
 SceneListEnd?
 d550ee13f4fad1822a6e6b5b8f812a48 Assembly-CSharp.dll:VRTK.UnityEventHelper.VRTK_SDKSetup_UnityEvents
 c6cd185c7eb3f770997e6ae64fa570e2 Assembly-CSharp.dll:VRTK.GrabAttachMechanics.VRTK_FixedJointGrabAttach
