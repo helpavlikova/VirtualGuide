@@ -52,6 +52,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Building.cs" />
+     <Compile Include="Assets\Scripts\ChangeScene.cs" />
+     <Compile Include="Assets\Scripts\ColorSlider.cs" />
      <Compile Include="Assets\Scripts\DataReader.cs" />
      <Compile Include="Assets\Scripts\FastObjImporter.cs" />
      <Compile Include="Assets\Scripts\Generator.cs" />
