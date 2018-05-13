@@ -16,7 +16,6 @@ public class ChangeScene : MonoBehaviour {
 	}
 
     public void loadMainScene() {
-        Debug.Log("clicked the button!!");
         SceneManager.LoadScene("mainScene");
     }
 }
