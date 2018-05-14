@@ -1,0 +1,160 @@
+{
+"models": [
+	{
+    "model_name": "house42",
+    "model_ID": 1,
+    "info": "some random info",
+    "file_link": ".\\MedHouse\\housemedieval.obj",
+    "file": "string",
+    "weather": "sunny",
+    "time": "afternoon",
+    "season": "spring",
+    "texture_link": ".\\MedHouse\\HouseMed_Diff.jpg",
+    "position_coords": {
+      "x": -5,
+      "y": 13.5,
+      "z": -10
+    },
+    "rotation_coords": {
+      "x": 0,
+      "y": 20,
+      "z": 0
+    },
+    "scale_coords": {
+      "x": 2,
+      "y": 2,
+      "z": 2
+    }
+  },
+  {
+    "model_name": "house42",
+    "model_ID": 2,
+    "info": "vzadu vpravo",
+    "file_link": ".\\MedHouse\\housemedieval.obj",
+    "file": "string",
+    "weather": "sunny",
+    "time": "afternoon",
+    "season": "spring",
+    "texture_link": ".\\MedHouse\\HouseMed_Diff.jpg",
+    "position_coords": {
+      "x": -20,
+      "y": 13.5,
+      "z": 30
+    },
+    "rotation_coords": {
+      "x": 0,
+      "y": 180,
+      "z": 0
+    },
+    "scale_coords": {
+      "x": 2,
+      "y": 2,
+      "z": 2
+    }
+  },
+  {
+    "model_name": "house42",
+    "model_ID": 3,
+    "info": "dum vzadu vlevo",
+    "file_link": ".\\MedHouse\\housemedieval.obj",
+    "file": "string",
+    "weather": "sunny",
+    "time": "afternoon",
+    "season": "spring",
+    "texture_link": ".\\MedHouse\\HouseMed_Diff.jpg",
+    "position_coords": {
+      "x": -20,
+      "y": 13.5,
+      "z": -10
+    },
+    "rotation_coords": {
+      "x": 0,
+      "y": 20,
+      "z": 0
+    },
+    "scale_coords": {
+      "x": 2,
+      "y": 2,
+      "z": 2
+    }
+  },
+  {
+    "model_name": "house42",
+    "model_ID": 4,
+    "info": "some random info",
+    "file_link": ".\\MedHouse\\housemedieval.obj",
+    "file": "string",
+    "weather": "sunny",
+    "time": "afternoon",
+    "season": "spring",
+    "texture_link": ".\\MedHouse\\HouseMed_Diff.jpg",
+    "position_coords": {
+      "x": -35,
+      "y": 13.5,
+      "z": 20
+    },
+    "rotation_coords": {
+      "x": 0,
+      "y": 20,
+      "z": 0
+    },
+    "scale_coords": {
+      "x": 2,
+      "y": 2,
+      "z": 2
+    }
+  },
+  {
+    "model_name": "house42",
+    "model_ID": 5,
+    "info": "some random info",
+    "file_link": ".\\MedHouse\\housemedieval.obj",
+    "file": "string",
+    "weather": "sunny",
+    "time": "afternoon",
+    "season": "spring",
+    "texture_link": ".\\MedHouse\\HouseMed_Diff.jpg",
+    "position_coords": {
+      "x": 0,
+      "y": 13.5,
+      "z": 25
+    },
+    "rotation_coords": {
+      "x": 0,
+      "y": 180,
+      "z": 0
+    },
+    "scale_coords": {
+      "x": 2,
+      "y": 2,
+      "z": 2
+    }
+  },
+  {
+    "model_name": "house42",
+    "model_ID": 6,
+    "info": "some random info",
+    "file_link": ".\\MedHouse\\housemedieval.obj",
+    "file": "string",
+    "weather": "sunny",
+    "time": "afternoon",
+    "season": "spring",
+    "texture_link": ".\\MedHouse\\HouseMed_Diff.jpg",
+    "position_coords": {
+      "x": -35,
+      "y": 13.5,
+      "z": 10
+    },
+    "rotation_coords": {
+      "x": 0,
+      "y": 90,
+      "z": 0
+    },
+    "scale_coords": {
+      "x": 2,
+      "y": 2,
+      "z": 2
+    }
+  }
+	]
+}

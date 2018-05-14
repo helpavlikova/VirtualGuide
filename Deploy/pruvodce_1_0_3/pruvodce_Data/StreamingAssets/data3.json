@@ -1,0 +1,44 @@
+{
+"models": [
+	{
+	"id":1,
+	"name":"house1",
+	"link":".\\house.obj",
+	"position_coords" : {
+    "x" : 0.5,
+    "y" : 0,
+    "z" : 0.5
+	},
+	"rotation_coords" : {
+    "x" : 0,
+    "y" : 0,
+    "z" : 0
+	},
+	"scale_coords" : {
+    "x" : 0.5,
+    "y" : 0.5,
+    "z" : 0.5
+	}
+	},
+	{
+	"id":2,
+	"name":"house2",
+	"link":".\\house.obj",
+	"position_coords" : {
+    "x" : 8.5,
+    "y" : 0,
+    "z" : 6.5
+	},
+	"rotation_coords" : {
+    "x" : 0,
+    "y" : 0.5,
+    "z" : 0
+	},
+	"scale_coords" : {
+    "x" : 1.5,
+    "y" : 1.5,
+    "z" : 1.5
+	}
+	},
+	]
+}

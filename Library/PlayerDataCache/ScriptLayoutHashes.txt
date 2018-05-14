@@ -1,7 +1,8 @@
 WindowsStandalone
 PlayerPath?
-C:/FIT/Bakalarka/VirtualniPruvodce/Deploy/pruvodce_1_0_2/pruvodce.exe
+C:/FIT/Bakalarka/VirtualniPruvodce/Deploy/pruvodce_1_0_3/pruvodce.exe
 SceneListBegin?
+Assets/Scenes/MainMenu.unity
 Assets/Scenes/mainScene.unity
 SceneListEnd?
 d550ee13f4fad1822a6e6b5b8f812a48 Assembly-CSharp.dll:VRTK.UnityEventHelper.VRTK_SDKSetup_UnityEvents
@@ -348,6 +349,7 @@ bbbb2bfceb4d350c4182487925b6addf Assembly-CSharp.dll:VRTK.Examples.VRTK_Controll
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:VRTK.RadialButtonIcon
 2d4a1286379f30096b2cd1920a85978a Assembly-CSharp.dll:VRTK.VRTK_WarpObjectControlAction
 a7fb925992eaa6c7ad4ddffedadd1fb5 Assembly-CSharp.dll:VRTK.Examples.RealGun_Slide
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ChangeScene
 a7c2e2176de8a94f882bb46179b86539 Assembly-CSharp.dll:VRTK.Examples.ControlReactor
 9b5a0829e139e3312e07a09633c29642 Assembly-CSharp.dll:VRTK.VRTK_TouchpadWalking
 fadd04417ee52a6ae6b69da79dd767d2 Assembly-CSharp.dll:VRTK.Examples.Archery.BowHandle
