@@ -8,13 +8,13 @@ using System.Security.Cryptography.X509Certificates;
 using System.Net.Security;
 using Newtonsoft.Json;
 
-//a root clas encompassing the array of all models
+/*A root clas encompassing the array of all models */
 public class Root
 {
     public Model[] models;
 }
 
-
+/*A class for the coordinate system*/
 public class Coords {
     public float x;
     public float y;
@@ -23,7 +23,7 @@ public class Coords {
 
 
 
-//informace o modelu
+/*A class containing all the fields from JSON. All information about the model is set here*/
 [System.Serializable]
 public class Model
 {
@@ -41,13 +41,16 @@ public class Model
     public Coords scale_coords;
 }
 
+/*This class deals with reading JSON files, either from remote server via HTTP or from FS for the purpose of testing.*/
 public class DataReader { 
    
     Root root;
     string filePath;
     string uri = "https://virtserver.swaggerhub.com/pavlihel9/VirtualGuide/1.0.4/models/42";
-    string gameDataFileName = "data4.json";
+    string gameDataFileName = "data5.json";
 
+
+    /*This method gets around the security issues in which Mono does not want to accept any certificate, even if trusted.*/
     //via https://answers.unity.com/questions/792342/how-to-validate-ssl-certificates-when-using-httpwe.html
     public bool MyRemoteCertificateValidationCallback(System.Object sender, 
         X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
@@ -78,12 +81,14 @@ public class DataReader {
         return isOk;
     }
 
+    /*A simple method to make the JSON file readable by our data structures.*/
     public string fixJson(string value)
     {
         value = "{\"models\": [" + value + "] }";
         return value;
     }
 
+    /*Loads JSON file from File System.*/
     public string GetJSONfromFS()
     {
         filePath = Path.Combine(Application.streamingAssetsPath, gameDataFileName);
@@ -104,6 +109,7 @@ public class DataReader {
         
     }
 
+    /*Loads JSON file from remote server via HTTP*/
     private string GetJSONfromAPI()
     {
         HttpWebRequest request = (HttpWebRequest)WebRequest.Create(String.Format(uri));
@@ -120,6 +126,7 @@ public class DataReader {
         return jsonResponse;
     }
 
+    /*A function to load JSON file wither from FS or via API*/
     public void LoadGameData() {
         string jsonresponse;
         jsonresponse = GetJSONfromFS();
@@ -128,17 +135,14 @@ public class DataReader {
 
     }
 
+    /*Returns a particular model from the list*/
     public Model GetModel(int i) {
         return root.models[i];
     }
 
+    /*Returns number of all models*/
     public int GetSize() {
         return root.models.Length;
     }
 
-
-    // Update is called once per frame
-    void Update() {
-
-    }
 }
