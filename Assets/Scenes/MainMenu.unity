@@ -497,7 +497,7 @@ RectTransform:
   m_GameObject: {fileID: 43506578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1.86}
-  m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
+  m_LocalScale: {x: 0.020431174, y: 0.019933585, z: 0.019933585}
   m_Children:
   - {fileID: 1839447375}
   - {fileID: 496355302}
@@ -509,7 +509,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -1.51, y: 1.55}
+  m_AnchoredPosition: {x: -1.51, y: 2.13}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &48309599
@@ -2189,6 +2189,7 @@ GameObject:
   - component: {fileID: 496355305}
   - component: {fileID: 496355304}
   - component: {fileID: 496355303}
+  - component: {fileID: 496355306}
   m_Layer: 5
   m_Name: ButtonNam
   m_TagString: Untagged
@@ -2253,7 +2254,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 496355304}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 496355306}
+        m_MethodName: setSquare
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &496355304
@@ -2289,6 +2301,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 496355301}
+--- !u!114 &496355306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 496355301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ab28dd445a00a4193f6ada4a90066c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &533417065
 GameObject:
   m_ObjectHideFlags: 0
@@ -2424,6 +2447,7 @@ GameObject:
   - component: {fileID: 567369818}
   - component: {fileID: 567369817}
   - component: {fileID: 567369816}
+  - component: {fileID: 567369819}
   m_Layer: 5
   m_Name: ButtonUlice
   m_TagString: Untagged
@@ -2488,7 +2512,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 567369817}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 567369819}
+        m_MethodName: setStreet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &567369817
@@ -2524,6 +2559,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 567369814}
+--- !u!114 &567369819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 567369814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ab28dd445a00a4193f6ada4a90066c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &583448874
 GameObject:
   m_ObjectHideFlags: 0
