@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\DataReader.cs" />
      <Compile Include="Assets\Scripts\FastObjImporter.cs" />
      <Compile Include="Assets\Scripts\Generator.cs" />
+     <Compile Include="Assets\Scripts\Settings.cs" />
      <Compile Include="Assets\VRTK\Examples\ExampleResources\Scripts\Archery\Arrow.cs" />
      <Compile Include="Assets\VRTK\Examples\ExampleResources\Scripts\Archery\ArrowNotch.cs" />
      <Compile Include="Assets\VRTK\Examples\ExampleResources\Scripts\Archery\ArrowSpawner.cs" />

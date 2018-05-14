@@ -47,7 +47,7 @@ public class DataReader {
     Root root;
     string filePath;
     string uri = "https://virtserver.swaggerhub.com/pavlihel9/VirtualGuide/1.0.4/models/42";
-    string gameDataFileName = "data5.json";
+    string gameDataFileName = Settings.Path;
 
 
     /*This method gets around the security issues in which Mono does not want to accept any certificate, even if trusted.*/

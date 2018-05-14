@@ -4,18 +4,20 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
+    
     public void loadMainScene() {
         SceneManager.LoadScene("mainScene");
+    }
+
+    public void setStreet()
+    {
+        Settings.Path = "data4.json";
+        Debug.Log(Settings.Path);
+    }
+
+    public void setSquare()
+    {
+        Settings.Path = "data5.json";
+        Debug.Log(Settings.Path);
     }
 }
